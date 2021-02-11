@@ -75,6 +75,8 @@ steps:
       - cat ${CFSTEP_HELM_ROOTDIR:-/opt}/bin/build_entrypoint_script
       - echo "--- LSing libs ---"
       - ls ${CFSTEP_HELM_ROOTDIR:-/opt}/lib
+      - echo "--- CATing libs ---"
+      - cat ${CFSTEP_HELM_ROOTDIR:-/opt}/lib/EntrypointScriptBuilder.py
     when:
       condition:
         any:
