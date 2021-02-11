@@ -78,7 +78,7 @@ steps:
       - echo "--- CATing libs ---"
       - cat ${CFSTEP_HELM_ROOTDIR:-/opt}/lib/EntrypointScriptBuilder.py
       - echo "--- LSing charts ---"
-      - ls /opt/charts
+      - ls /opt/chart
     when:
       condition:
         any:
