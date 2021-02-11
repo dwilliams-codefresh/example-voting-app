@@ -73,6 +73,8 @@ steps:
       - cat /opt/bin/release_chart
       - echo "--- CFSTEP_HELM_ROOTDIR=${CFSTEP_HELM_ROOTDIR:-/opt} ---"
       - cat ${CFSTEP_HELM_ROOTDIR:-/opt}/bin/build_entrypoint_script
+      - echo "--- LSing libs ---"
+      - ls ${CFSTEP_HELM_ROOTDIR:-/opt}/lib
     when:
       condition:
         any:
