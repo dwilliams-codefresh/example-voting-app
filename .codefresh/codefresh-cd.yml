@@ -72,7 +72,7 @@ steps:
       - echo "--- CATing SCRIPT ---"
       - cat /opt/bin/release_chart
       - echo "--- CFSTEP_HELM_ROOTDIR=${CFSTEP_HELM_ROOTDIR:-/opt} ---"
-      - cat ${CFSTEP_HELM_ROOTDIR}/bin/build_entrypoint_script
+      - cat ${CFSTEP_HELM_ROOTDIR:-/opt}/bin/build_entrypoint_script
     when:
       condition:
         any:
