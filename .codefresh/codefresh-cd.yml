@@ -91,7 +91,7 @@ steps:
     stage: "pull request"
     title: Create Ephemeral Helm Release for Pull Request
     arguments:
-      chart_name: example-voting-app
+      chart_name: example-voting-app/example-voting-app
       release_name: ${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_PULL_REQUEST_NUMBER}}-${{CF_REPO_NAME}}
       kube_context: ${{KUBE_CONTEXT}}
       tiller_namespace: kube-system
